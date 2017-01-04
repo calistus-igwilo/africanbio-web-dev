@@ -283,7 +283,6 @@ a.caption-btn:hover{
 }
 .mid-grid-left{
 	padding:0;
-	background:url(../images/about-pic.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	min-height:500px;
 }
@@ -1186,12 +1185,10 @@ ul.pagenation li a:hover{
 /*-- responsive-design --*/
 @media(max-width:1366px){
 	.mid-grid-left {
-		background: url(../images/about-pic.jpg) no-repeat -48px 0px;
 	}
 }
 @media(max-width:1280px){
 	.mid-grid-left {
-		background: url(../images/about-pic.jpg) no-repeat -57px 0px;
 	}
 	.header {
 		background-size: 22% 100%;
@@ -1202,7 +1199,6 @@ ul.pagenation li a:hover{
 }
 @media(max-width:1024px){
 	.mid-grid-left {
-		background: url(../images/about-pic.jpg) no-repeat -227px 0px;
 	}
 	.header {
 		background-size: 25% 100%;
@@ -1220,7 +1216,6 @@ ul.pagenation li a:hover{
 }
 @media(max-width:768px){
 	.mid-grid-left {
-		background: url(../images/about-pic.jpg) no-repeat -227px 0px;
 	}
 	.header {
 		background:none;
@@ -1338,7 +1333,6 @@ ul.pagenation li a:hover{
 }
 @media(max-width:640px){
 	.mid-grid-left {
-		background: url(../images/about-pic.jpg) no-repeat -227px 0px;
 	}
 	.header {
 		background:none;
@@ -1472,7 +1466,6 @@ ul.pagenation li a:hover{
 }
 @media(max-width:480px){
 	.mid-grid-left {
-		background: url(../images/about-pic.jpg) no-repeat 0px 0px;
 		min-height: 200px;
 		background-size: cover;
 	}
@@ -1699,7 +1692,6 @@ ul.pagenation li a:hover{
 }
 @media(max-width:320px){
 	.mid-grid-left {
-		background: url(../images/about-pic.jpg) no-repeat 0px 0px;
 		min-height: 100px;
 		background-size: cover;
 	}
