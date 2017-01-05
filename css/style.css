@@ -236,7 +236,8 @@ a.caption-btn:hover{
 .top-grid{
 	border:1px solid #EEE;
 	padding:4em 0;
-	transition:border-color 0.5s all;
+	transition:border-color 0.5s;
+	text-align: center;
 }
 .top-grid:hover{
 	border-color:#00FF5C;
