@@ -16,7 +16,6 @@ input [type="text"],input [type="submit"],input [type="button"],textarea{
 /*-- header --*/
 .header{
 	padding: 1em 0;
-	background-size: 27% 100%;
 }
 .logo img{
 	float:left;
@@ -185,7 +184,7 @@ span.menu{
 	top: 50%;
 	background: rgba(0, 0, 0, 0.51);
 	padding: 1em;
-	width: 42%;
+	width: 60%;
 }
 .slider-caption h1{
 	font-weight: 700;
@@ -320,6 +319,20 @@ a.about-btn{
 a.about-btn:hover{
 	background:#00FF5C;
 }
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /*-- .bottom-grids --*/
 .bottom-grids{
 	padding: 3em 0 0 0;
@@ -651,7 +664,7 @@ p.copy-right a:hover{
 	color: #10331D;
 	margin: 0;
 	padding: 0 0 0.5em 0;
-	font-size: 1.9em;
+	font-size: 1.2em;
 }
 .services-left-grid p{
 	color: #777;
@@ -993,7 +1006,7 @@ ul.pagenation li a:hover{
 }
 .twitter-weight-grid h4{
 	color:#10331D;
-	font-size:1.9em;
+	font-size:1.2em;
 	margin: 0;
 }
 .twitter-weight-grid p{
@@ -1110,7 +1123,7 @@ ul.pagenation li a:hover{
 	margin-right: 1%;
 } 
 .contact-form-row div span,.contact-form-row2  span{
-	font-size:1.9em;
+	font-size:1.2em;
 	color:#10331D;
 	font-weight:700;
 	text-transform:uppercase;
@@ -1132,8 +1145,8 @@ ul.pagenation li a:hover{
 	-ms-transition:border-color 0.4s;
 }
 .contact-form-row div input[type="text"]:hover,.contact-form-row2 textarea:hover{
-	color:#00FF5C;
-	border-color:#00FF5C;
+	color:#10331D;
+	border-color:#6BFFA0;
 }
 .contact-form-row div:nth-child(3){
 	margin-right:0;
@@ -1160,8 +1173,8 @@ ul.pagenation li a:hover{
 .contact-form input[type="submit"]{
 	display: block;
 	background: #10331D;
-	padding: 0.7em 1em;
-	font-size:1.9em;
+	padding: 0.7em 2em;
+	font-size:1.2em;
 	text-transform: uppercase;
 	color: #FFF;
 	font-weight: 700;
@@ -1185,6 +1198,11 @@ ul.pagenation li a:hover{
 	background: #00FF5C;
 }
 /*-- responsive-design --*/
+@media (min-width: 1440px) {
+  .container {
+    width: 85%;
+    max-width: 100%;
+  }
 @media(max-width:1366px){
 	.mid-grid-left {
 	}
@@ -1205,12 +1223,19 @@ ul.pagenation li a:hover{
 	.header {
 		background-size: 25% 100%;
 	}
-	.slider-caption {
-		top: 36%;
+	.slider-caption{
+	top: 50%;
+	width: 80%;
+	display: none;
 	}
-	.slider-caption {
-		width: 58%;
-		top: 43%;
+	.slider-caption h1{
+		font-size: 3em;
+	}
+	.slider-caption p{
+		display: none;
+	}
+	a.caption-btn{
+		display: none;
 	}
 	.top-grid {
 		padding: 2em 0;
@@ -1313,6 +1338,7 @@ ul.pagenation li a:hover{
 	}
 	.contact-map iframe {
 		min-height: 200px;
+		width: 100%;
 	}
 	.contact-form-row div {
 		width:100%;
@@ -1562,7 +1588,7 @@ ul.pagenation li a:hover{
 		margin: 1.5em 0 3em;
 	}
 	.contact-head h2 {
-		font-size: 1.9em;
+		font-size: 1.2em;
 		padding: 0.0em 0 0.2em 0;
 	}
 	.contact-map iframe {
@@ -1621,7 +1647,7 @@ ul.pagenation li a:hover{
 		padding: 0.2em 0;
 	}
 	.about-left h1 {
-		font-size: 1.9em;
+		font-size: 1.2em;
 		line-height: 1.5em;
 		padding:0.5em 0 0.3em 0;
 	}
@@ -1633,7 +1659,7 @@ ul.pagenation li a:hover{
 	}
 	.services-left h1 {
 		padding: 0.3em 0 0em 0;
-		font-size: 1.9em;
+		font-size: 1.2em;
 		line-height: 1.8em;
 	}
 	.services-left-grid {
@@ -1672,10 +1698,10 @@ ul.pagenation li a:hover{
 		font-size: 0.8em;
 	}
 	.twitter-weights h3 {
-		font-size: 1.9em;
+		font-size: 1.2em;
 	}
 	.b-tag-weight h3 {
-		font-size: 1.9em;
+		font-size: 1.2em;
 	}
 	.b-tag-weight ul li a {
 		padding: 0.6em 1em;
@@ -1795,7 +1821,7 @@ ul.pagenation li a:hover{
 		margin: 1.5em 0 3em;
 	}
 	.contact-head h2 {
-		font-size: 1.9em;
+		font-size: 1.2em;
 		padding: 0.0em 0 0.2em 0;
 	}
 	.contact-map iframe {
@@ -1857,7 +1883,7 @@ ul.pagenation li a:hover{
 		padding: 0.2em 0;
 	}
 	.about-left h1 {
-		font-size: 1.9em;
+		font-size: 1.2em;
 		line-height: 1.5em;
 		padding: 0.3em 0 0.2em 0;
 	}
@@ -1869,7 +1895,7 @@ ul.pagenation li a:hover{
 	}
 	.services-left h1 {
 		padding: 0.3em 0 0em 0;
-		font-size: 1.9em;
+		font-size: 1.2em;
 		line-height: 1.8em;
 	}
 	.services-left-grid {
@@ -1908,10 +1934,10 @@ ul.pagenation li a:hover{
 		font-size: 0.6em;
 	}
 	.twitter-weights h3 {
-		font-size: 1.9em;
+		font-size: 1.2em;
 	}
 	.b-tag-weight h3 {
-		font-size: 1.9em;
+		font-size: 1.2em;
 	}
 	.b-tag-weight ul li a {
 		padding: 0.6em 1em;
@@ -1929,23 +1955,23 @@ ul.pagenation li a:hover{
 	}
 	.top-grid h3 {
 		padding: 0.2em 0 0.2em;
-		font-size: 1.9em;
+		font-size: 1.2em;
 	}
 	.mid-grid-right h2 {
-		font-size: 1.9em;
+		font-size: 1.2em;
 	}
 	a.about-btn {
 		padding: 0.7em 1em;
 	}
 	.bottom-grids h2 {
-		font-size: 1.9em;
+		font-size: 1.2em;
 		padding: 0em 0 0.8em;
 	}
 	.team-people-info h3 {
 		margin-top: 3.5em;
 	}
 	.team-grids-caption-left h4 {
-		font-size: 1.9em;
+		font-size: 1.2em;
 	}
 	.team-grids-caption-left p{
 		font-size:0.875em;
@@ -1958,7 +1984,7 @@ ul.pagenation li a:hover{
 		font-size:0.875em;
 	}
 	.about-left h2,.team-head h3{
-		font-size:1.9em;
+		font-size:1.2em;
 	}
 	.services-left-grid p {
 		line-height: 1.5em;
