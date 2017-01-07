@@ -13,6 +13,18 @@ body a{
 input [type="text"],input [type="submit"],input [type="button"],textarea{
 	-webkit-appearance:none;
 }
+tab2 { padding-left: 2em; }
+tab3 { padding-left: 3em; }
+tab4 { padding-left: 4em; }
+tab5 { padding-left: 5em; }
+tab6 { padding-left: 6em; }
+tab7 { padding-left: 7em; }
+tab8 { padding-left: 8em; }
+::selection {
+    text-shadow: none;
+    color: #fff;
+	background: rgba(250, 43, 23, 0.8);
+}
 /*-- header --*/
 .header{
 	padding: 1em 0;
@@ -234,13 +246,13 @@ a.caption-btn:hover{
 	padding:3.5em 0;
 }
 .top-grid{
-	border:1px solid #EEE;
 	padding:4em 0;
-	transition:border-color 0.5s;
+	transition:color 0.5s;
 	text-align: center;
+
 }
 .top-grid:hover{
-	border-color:#00FF5C;
+	color:#00FF5C;
 }
 .top-grid h3{
 	color: #10331D;
@@ -256,24 +268,8 @@ a.caption-btn:hover{
 	font-size: 0.875em;
 	width: 90%;
 	margin: 0 auto;
-}
-.top-grid span{
-	width:64px;
-	height:64px;
-	display:inline-block;
-	background:url(../images/top-icons.png) no-repeat 0px 0px;
-}
-.top-grid span.t-icon1{
-	background-position:0px 0px;
-}
-.top-grid span.t-icon2{
-	background-position: -84px 0px;
-}
-.top-grid span.t-icon3{
-	background-position: -162px 0px;
-}
-.top-grid span.t-icon4{
-	background-position: -242px 0px;
+	text-align: justify;
+
 }
 /*-- mid-grids --*/
 .mid-grids {
