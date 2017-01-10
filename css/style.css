@@ -65,7 +65,8 @@ span.menu{
 .img-slider{
 }
 #slider2,
-#slider3 {
+#slider3,
+#slider4 {
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -193,7 +194,6 @@ span.menu{
 	top: 0;
 	z-index: 999;
 	left: 0%;
-	top: 50%;
 	background: rgba(0, 0, 0, 0.51);
 	padding: 1em;
 	width: 60%;
@@ -204,13 +204,13 @@ span.menu{
 	font-size: 4em;
 	margin: 0;
 	padding: 0;
-	color:#FFF;
+	color:#B22D27;
 }
 .slider-caption{
 
 }
 .slider-caption h1 span{
-	color:#B22D27;
+	color:#FFF;
 }
 .slider-caption p{
 	color: #FFF;
@@ -1194,14 +1194,21 @@ ul.pagenation li a:hover{
 	background: #00FF5C;
 }
 /*-- responsive-design --*/
-@media (min-width: 1440px) {
+@media (min-width: 1367px) {
   .container {
     width: 85%;
     max-width: 100%;
-  }
+  	}
+	.slider-caption {
+		top: 40%;
+	}
+}
 @media(max-width:1366px){
 	.mid-grid-left {
 	}
+	.slider-caption {
+		top: 40%;
+	}	
 }
 @media(max-width:1280px){
 	.mid-grid-left {
@@ -1210,7 +1217,7 @@ ul.pagenation li a:hover{
 		background-size: 22% 100%;
 	}
 	.slider-caption {
-		top: 53%;
+		top: 20%;
 	}
 }
 @media(max-width:1024px){
@@ -1220,15 +1227,13 @@ ul.pagenation li a:hover{
 		background-size: 25% 100%;
 	}
 	.slider-caption{
-	top: 50%;
+	top: 0%;
 	width: 80%;
-	display: none;
 	}
 	.slider-caption h1{
 		font-size: 3em;
 	}
 	.slider-caption p{
-		display: none;
 	}
 	a.caption-btn{
 		display: none;
@@ -1244,11 +1249,15 @@ ul.pagenation li a:hover{
 		background:none;
 	}
 	.slider-caption {
-		top: 36%;
+		top: 0%;
 	}
-	.slider-caption {
-		width: 69%;
-		top: 30%;
+	.slider-caption h1{
+	}
+	.slider-caption h1 span{
+		display: none
+	}
+	.callbacks_tabs {
+		display: none;
 	}
 	.top-grid {
 		padding: 1em 0;
@@ -1363,11 +1372,11 @@ ul.pagenation li a:hover{
 		padding: 0.5em 0;
 	}
 	.slider-caption {
-		top: 36%;
+		top: 0%;
 	}
 	.slider-caption {
-		width: 69%;
-		top: 46%;
+		width: 100%;
+		top: 0%;
 	}
 	.top-grid {
 		padding: 1em 0;
@@ -1473,7 +1482,6 @@ ul.pagenation li a:hover{
 		padding: 1em 0 3em;
 	}
 	.slider-caption p {
-		height: 20px;
 		overflow: hidden;
 		width: 93%;
 		margin:0;
@@ -1501,8 +1509,8 @@ ul.pagenation li a:hover{
 		top: 36%;
 	}
 	.slider-caption {
-		width: 69%;
-		top: 24%;
+		width: 100%;
+		top: 0%;
 		padding: 0.8em 0.5em;
 	}
 	.top-grid {
@@ -1724,11 +1732,11 @@ ul.pagenation li a:hover{
 		padding: 0.5em 0;
 	}
 	.slider-caption {
-		top: 36%;
+		top: 0%;
 	}
 	.slider-caption {
-		width: 69%;
-		top: 24%;
+		width: 100%;
+		top: 0%;
 		padding: 0.8em 0.5em;
 	}
 	.top-grid {
