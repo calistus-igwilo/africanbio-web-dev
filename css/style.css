@@ -348,6 +348,7 @@ a.about-btn:hover{
 	width:100%;
 	border:1px solid #EEE;
 	padding:0.2em;
+	background: white;
 }
 a.news-btn{
 	background:#FFF;
@@ -406,7 +407,7 @@ a.load-news:hover{
 .team-head h3{
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #10331D;
+	color: #301010;
 	margin: 0;
 	padding: 0 0 0.5em 0;
 }
@@ -501,7 +502,7 @@ a.load-news:hover{
 .team-grids-caption-left p{
 	margin: 0;
 	padding: 0;
-	color: #81AABD;
+	color: #BBFFDD;
 }
 a.team-btn{
 	border: 2px solid #00FF5C;
@@ -1168,7 +1169,7 @@ ul.pagenation li a:hover{
 .contact-form input[type="submit"]{
 	display: block;
 	background: #10331D;
-	padding: 0.7em 2em;
+	padding: 0.4em 2em;
 	font-size:1.2em;
 	text-transform: uppercase;
 	color: #FFF;

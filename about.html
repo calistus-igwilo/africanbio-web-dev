@@ -13,6 +13,9 @@
    		 <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 		 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">	
    		  <!-- webfonts -->
+		 <link rel="stylesheet" href="css/normalize.css">
+         <link rel="stylesheet" href="css/main.css">
+         <script src="js/vendor/modernizr-2.6.2.min.js"></script>		 
 	</head>
 	<body>
 		<!-- container -->
@@ -56,7 +59,7 @@
 		<div class="about">
 						<div class="container">
 							<div class="about-grids">
-								<div class="col-md-9 about-left">
+								<div class="col-md-8 about-left">
 									<h1>About African Biosciences</h1>
 									<h4>Your Bioscience Research Partner In Africa</h4>
 				<p>African Biosciences Ltd. is a pioneer and innovative life sciences company providing research reagents, supplies and technical support services to the academic, research, healthcare diagnostics and forensic testing sectors in Nigeria and across Africa (through its subsidiaries). We are dedicated to transforming life sciences research by providing scientific and technical support to the academic and research community by enabling and catalyzing the ability to conduct bioscience research.</p>
@@ -69,46 +72,112 @@
 											<p> mission is to be the premier bioscience research service provider in Nigeria and across the African continent to improve bioscience research capacity by providing e-commerce access to reagents and supplies, research capabilities in genomics, proteomics, and bioinformatics, bioscience research advisory services, bioscience technical training, lab-for-rent, contract research services, and specialized medical testing and DNA forensics.</p>
 								</div>
 								
-								<div class="col-md-3 about-left">
-									<h2>Latest News</h2>
-									<!-- news-grid -->
+								<div class="col-md-4 about-left">
+									<!-- Subscription-grid -->
 									<div class="news-grid">
-										<img src="images/about-pic.jpg" title="name">
+        <form id="subscribe-form" class="subscribe-form hide">
+            <div class="form-title">Subscribe to our newsletter</div>
+            <hr>
+            <div class="form-loading hide"><i class="fa fa-circle-o-notch fa-spin"></i></div>
+            <div class="form-message hide">
+                Thank you for subscribing!</div>
+            <div class="form-content">
+                <div class="group">
+                    <label for="email">Your email</label>
+                    <div class="input-prefix">
+                        <i class="fa fa-user"></i>
+                        <input id="email" name="email" class="form-control" type="email" placeholder="Your email">
+                    </div>
+                </div>
+                <div class="group">
+                    <label for="name">Your name</label>
+                    <div class="input-prefix">
+                        <i class="fa fa-envelope"></i>
+                        <input id="name" name="name" class="form-control" type="text" placeholder="Your name">
+                    </div>
+                </div>
+                <div class="group group-submit">
+                    <label class="empty"></label>
+                    <div align="right"><button class="btn-submit" type="submit">Subscribe</button></div>
+                </div>
+            </div>
+            <div class="form-footer">
+                <a class="btn" data-toggle="unsubscribe" href="#">Unsubscribe</a>
+            </div>
+            <input type="hidden" name="action" value="subscribe">
+        </form>
+
+        <form id="unsubscribe-form" class="subscribe-form hide">
+            <div class="form-title unsubscribe">Unsubscribe from our newsletter</div>
+            <hr>
+            <div class="form-loading hide"><i class="fa fa-circle-o-notch fa-spin"></i></div>
+            <div class="form-message hide">
+                You've been unsubscribed.</div>
+            <div class="form-content">
+                <div class="group">
+                    <label for="unsubscribe_email">Your email</label>
+                    <div class="input-prefix">
+                        <i class="fa fa-user"></i>
+                        <input id="unsubscribe_email" name="unsubscribe_email" class="form-control" type="email" placeholder="Your email">
+                    </div>
+                </div>
+                <div class="group">
+                    <label class="empty"></label>
+                    <div>
+                        <input id="confirm" type="checkbox" name="confirm" value="T">
+                        <label for="confirm">Click to confirm you want to unsubscribe</label>
+                    </div>
+                </div>
+                <div class="group group-submit">
+                    <label class="empty"></label>
+                    <div align="right"><button class="btn-submit" type="submit">Unsubscribe</button></div>
+                </div>
+            </div>
+            <div class="form-footer">
+                <a class="btn" data-toggle="subscribe" href="#">Subscribe</a>
+            </div>
+            <input type="hidden" name="action" value="unsubscribe">
+        </form>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>     
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 									</div>
 									<!-- news-grid -->
 									<!-- recent-news -->
 									<div class="recent-posts">
-										<h2>Recent-posts</h2>
+										<h2>Latest News</h2>
 										<!-- recent-post-grids -->
 											<div class="recent-post-grids">
 												<div class="r-post-grid">
 													<div class="r-post-grid-left">
-														<a href="#"><img src="images/d1.jpg" title="name"></a>
+														<a href="#"><img src="images/logo.png" title="name"></a>
 													</div>
 													<div class="r-post-grid-right">
-														<h4>risus elit dignissim</h4>
+														<h4>Workshop 1</h4>
 														<p>Dolor in commodo rutrum, risus elit dignissim mi,ligula eros nec nunc.</p>
-													</div>
+													</div></a>
 													<div class="clearfix"> </div>
 												</div>
 												<div class="r-post-grid">
 													<div class="r-post-grid-left">
-														<a href="#"><img src="images/d2.jpg" title="name"></a>
+														<a href="#"><img src="images/logo.png" title="name">
 													</div>
 													<div class="r-post-grid-right">
-														<h4>risus elit dignissim</h4>
+														<h4>Workshop 2</h4>
 														<p>Dolor in commodo rutrum, risus elit dignissim mi,ligula eros nec nunc.</p>
-													</div>
+													</div></a>
 													<div class="clearfix"> </div>
 												</div>
 												<div class="r-post-grid">
 													<div class="r-post-grid-left">
-														<a href="#"><img src="images/d3.jpg" title="name"></a>
+														<a href="#"><img src="images/logo.png" title="name">
 													</div>
 													<div class="r-post-grid-right">
-														<h4>risus elit dignissim</h4>
+														<h4>Workshop 3</h4>
 														<p>Dolor in commodo rutrum, risus elit dignissim mi,ligula eros nec nunc.</p>
-													</div>
+													</div></a>
 													<div class="clearfix"> </div>
 												</div>
 											</div>
@@ -177,8 +246,8 @@
 		<div class="team-grids-caption">
 								<div class="container">
 									<div class="team-grids-caption-left">
-										<h4>He point of using Lorem Ipsum is that</h4>
-										<p>as opposed to using Many desktop publishing packages and web page editors now use </p>
+										<h4>Partner With Us</h4>
+										<p>African Biosciences is constantly looking for new partners, contact us to learn more</p>
 									</div>
 									<div class="team-grids-caption-right">
 										<a class="team-btn" href="contact.html">Contact</a>
